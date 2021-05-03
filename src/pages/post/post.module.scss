@@ -1,0 +1,57 @@
+.banner {
+  max-width: 100vw;
+  max-height: 400px;
+
+  img {
+    width: 100%;
+    height: 25rem;
+  }
+}
+
+.content {
+  margin: 5rem 9rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+  }
+
+  .headerInfo {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+
+    span {
+      display: flex;
+      flex-direction: row;
+
+      p,
+      time {
+        margin-left: 0.5rem;
+      }
+
+      & + span {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    margin: 0 2rem;
+  }
+}
+
+.postContent {
+  margin-top: 4rem;
+
+  h2 {
+    margin: 2rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+}

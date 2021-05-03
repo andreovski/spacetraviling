@@ -1,0 +1,65 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 9rem;
+
+  section {
+    display: block;
+
+    max-height: 8rem;
+
+    h1 {
+      display: block;
+      margin-bottom: 0.5rem;
+
+      font-size: 1.75rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      display: flex;
+
+      flex-direction: row;
+      margin-top: 16px;
+
+      svg {
+        margin-right: 0.5rem;
+        font-size: 20px;
+      }
+
+      time,
+      span {
+        display: flex;
+
+        align-items: center;
+        margin-right: 1.6rem;
+      }
+    }
+
+    & + section {
+      margin-top: 4rem;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    margin: 0 2rem;
+  }
+}
+
+.morePostsButton {
+  margin-top: 4rem;
+
+  button {
+    border: none;
+    background: transparent;
+
+    color: var(--pink);
+  }
+}
+
+.noPosts {
+  display: none;
+}
